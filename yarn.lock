@@ -7028,6 +7028,13 @@ __metadata:
     pkg-3-7: "workspace:packages/pkg-3-7"
     pkg-3-8: "workspace:packages/pkg-3-8"
     pkg-3-9: "workspace:packages/pkg-3-9"
+    pkg-dev-1: "workspace:packages/pkg-dev-1"
+    pkg-dev-2: "workspace:packages/pkg-dev-2"
+    pkg-dev-3: "workspace:packages/pkg-dev-3"
+    pkg-dev-4: "workspace:packages/pkg-dev-4"
+    pkg-dev-5: "workspace:packages/pkg-dev-5"
+    pkg-dev-6: "workspace:packages/pkg-dev-6"
+    typescript: ^3.7.5
   languageName: unknown
   linkType: soft
 

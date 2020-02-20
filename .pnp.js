@@ -14307,7 +14307,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["pkg-3-6", "virtual:b5b1470bb927f82f2103e2a3a288a31c27daad296024afa503d9d9c9575328ed8d044f2b53d08ba303b0616fa420ad819ebdb54c436c379ec0ba5cc63e5d18fb#workspace:packages/pkg-3-6"],
             ["pkg-3-7", "virtual:b5b1470bb927f82f2103e2a3a288a31c27daad296024afa503d9d9c9575328ed8d044f2b53d08ba303b0616fa420ad819ebdb54c436c379ec0ba5cc63e5d18fb#workspace:packages/pkg-3-7"],
             ["pkg-3-8", "virtual:b5b1470bb927f82f2103e2a3a288a31c27daad296024afa503d9d9c9575328ed8d044f2b53d08ba303b0616fa420ad819ebdb54c436c379ec0ba5cc63e5d18fb#workspace:packages/pkg-3-8"],
-            ["pkg-3-9", "virtual:b5b1470bb927f82f2103e2a3a288a31c27daad296024afa503d9d9c9575328ed8d044f2b53d08ba303b0616fa420ad819ebdb54c436c379ec0ba5cc63e5d18fb#workspace:packages/pkg-3-9"]
+            ["pkg-3-9", "virtual:b5b1470bb927f82f2103e2a3a288a31c27daad296024afa503d9d9c9575328ed8d044f2b53d08ba303b0616fa420ad819ebdb54c436c379ec0ba5cc63e5d18fb#workspace:packages/pkg-3-9"],
+            ["pkg-dev-1", "workspace:packages/pkg-dev-1"],
+            ["pkg-dev-2", "workspace:packages/pkg-dev-2"],
+            ["pkg-dev-3", "workspace:packages/pkg-dev-3"],
+            ["pkg-dev-4", "workspace:packages/pkg-dev-4"],
+            ["pkg-dev-5", "workspace:packages/pkg-dev-5"],
+            ["pkg-dev-6", "workspace:packages/pkg-dev-6"],
+            ["typescript", "patch:typescript@npm%3A3.7.5#builtin<compat/typescript>::version=3.7.5&hash=273569"]
           ],
           "linkType": "SOFT",
         }]
