@@ -37,12 +37,12 @@ echo $LIST_DEV
 # Create some peer dependencies
 
 LIST_PEER="react react-dom"
-
 echo $LIST_PEER
 
 # ###############################################
 # Create A hierarchy of 5 layers of packages that depend on all previous layers
 
+# Number of packages in each layer
 NB_PKG_1=10
 NB_PKG_2=50
 NB_PKG_3=50
