@@ -1,5 +1,5 @@
 {
-  "name": "pkg-4-19",
+  "name": "pkg-4-28",
   "dependencies": {
     "@babel/core": "npm:^7.8.4",
     "pkg-1-1": "workspace:packages/pkg-1-1",
