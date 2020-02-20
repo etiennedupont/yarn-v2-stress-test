@@ -1,0 +1,35 @@
+{
+    "private": true,
+    "workspaces": {
+        "packages": [
+            "packages/*"
+        ]
+    },
+    "scripts": {
+        "//clean": "lerna clean && rimraf packages/**/**/lib",
+        "build": "lerna run build",
+        "build:babel": "lerna run build:babel",
+        "build:lib": "lerna --concurrency ${CI_LERNA_CONCURRENCY:-4} run build:lib",
+        "build:lib-no-bail": "lerna --no-bail --concurrency ${CI_LERNA_CONCURRENCY:-4} run build:lib",
+        "build:no-bail": "lerna run build --no-bail",
+        "build:scope": "lerna --include-filtered-dependencies --no-bail --scope @sterblue/apps-cloud run build:lib",
+        "clean": "lerna run clean",
+        "lint": "yarn lint:prettier",
+        "lint:prettier": "prettier --check \"packages/**/*.{ts,tsx}\"",
+        "lint:packages": "lerna run lint",
+        "test": "jest --passWithNoTests",
+        "test:lerna": "lerna run test",
+        "test:lerna-perception": "lerna run --scope='@sterblue/perception-*' --ignore='@sterblue/perception-@(cooling-tower|wind-turbine|utils|update-status)' --concurrency ${CI_LERNA_CONCURRENCY:-4} test -- --passWithNoTests --collectCoverage",
+        "test:packages": "jest --passWithNoTests --maxWorkers=${CI_JEST_CONCURRENCY:-'90%'}"
+    },
+    "resolutions": {
+        "graphql": "14.2.1"
+    },
+    "engines": {
+        "node": ">=10.15.3",
+        "yarn": ">=1.16.0"
+    },
+    "installConfig": {
+        "pnp": true
+    }
+}
