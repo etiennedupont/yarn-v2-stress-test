@@ -6,6 +6,7 @@
         ]
     },
     "scripts": {
+        "echo": "echo ok",
         "//clean": "lerna clean && rimraf packages/**/**/lib",
         "build": "lerna run build",
         "build:babel": "lerna run build:babel",
